@@ -3,7 +3,13 @@
 	<head>
 		<title>MI_Browzers_Holiday_Hunt Unit Tests</title>
 		<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.12.0.css"/>
-
+<script>
+	var miAppControler = function() {};
+	miAppControler.prototype.bhh = 1;
+	var pageInfo = {'version':1.0};
+	pageInfo = {};
+	pageInfo.type = "section-front";
+</script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="http://code.jquery.com/qunit/qunit-1.12.0.js"></script>
 		<script src="../../MI/js/MI.js"></script>
@@ -13,7 +19,12 @@
 	</head>
 	<body>
   	<div id="qunit"></div>
-		<div id="qunit-fixture"></div>
+		<div id="qunit-fixture">
+			<div id="test-gift-loc">
+			</div>
+			<div id="test-board-loc">
+			</div>
+		</div>
 		<script src="mibrowzers_holiday_hunt_tests.js"></script>
 	</body>
 </html>
